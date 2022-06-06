@@ -1,0 +1,118 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+body{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,66,67,1) 20%, rgba(108,108,108,1) 50%, rgba(61,61,61,1) 86%, rgba(0,0,0,1) 100%);
+}
+#main{
+    margin-bottom: 8%;
+}
+#content{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+#tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 5.5em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(48, 48, 48, 0.4),
+    1px 22px 10px rgba(48, 48, 48, 0.4),
+    1px 25px 35px rgba(48, 48, 48, 0.4),
+    1px 30px 60px rgba(48, 48, 48, 0.4);
+}
+#ahorcado{
+    margin-left: 62px;
+}
+@media (max-width:600px){
+    h1{
+        font-size: 3.5em;
+    }
+    #ahorcado{
+        display: none;
+    }
+}
+
+#copyright{
+    color: white;
+    font-weight: 700;
+}
+
+
+#buttons{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#svg-wrapper {
+    margin: 10px 5px; 
+    position: relative;
+    width: 150px;
+    /*make sure to use same height/width as in the html*/
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+}
+#shape {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #009FFD;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+}
+#text {
+    margin-top: -35px;
+    text-align: center;
+}
+#text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1em;
+}
+#svg-wrapper:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke: #06D6A0;
+}
+#text a:hover {
+    font-family: monospace;
+    color: #06D6A0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
